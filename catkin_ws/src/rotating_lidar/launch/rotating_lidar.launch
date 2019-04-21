@@ -1,0 +1,6 @@
+<launch>
+
+	<node pkg="rotating_lidar" type="tf_mini.py" name="tf_mini" />
+	<node pkg="rotating_lidar" type="rotation.py" name="yaw_rotation" />
+
+</launch>
