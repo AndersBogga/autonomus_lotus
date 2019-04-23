@@ -1,0 +1,16 @@
+import time
+import smbus
+
+bus = smbus.SMBus(0)
+address = 0x36
+
+def range():
+        range1 = bus.read_byte_data(address, 2)
+        return range1
+
+while True:
+       
+        lightlvl = lightlevel()
+        rng = range()
+        print lightlvl
+        print rng
